@@ -1,4 +1,22 @@
 <h1>Welcome to Github Pages</h1>
+<mat-slider min="1" max="100" step="1" value="50"></mat-slider>
+<br>
+<mat-slider
+  thumbLabel
+  [displayWith]="formatLabel"
+  tickInterval="1000"
+  step="1000"
+  min="0"
+  max="100000"
+  aria-label="units">
+</mat-slider>
 
-<button mat-raised-button color="primary">Button</button>
-<button mat-button>Button</button>
+<mat-divider></mat-divider>
+
+<br>
+<button (click)="alert()" mat-raised-button color="primary">Button</button>
+<button (click)="alert()" mat-button>Button</button>
+
+<br>
+<br>
+<mat-checkbox class="example-margin" >Checked</mat-checkbox>
